@@ -34,7 +34,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-get autoremove && \
     rm -rf /var/lib/apt/lists/*
 
-RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
+RUN curl -O https://bootstrap.pypa.io/pip/2.7/get-pip.py && \
     python get-pip.py && \
     rm get-pip.py
 
